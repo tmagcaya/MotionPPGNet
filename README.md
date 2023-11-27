@@ -7,4 +7,3 @@ Summary: Fitness/health trackers use optical sensors called PPG sensors to measu
 
 References:
 - https://github.com/KJStrand/Pulse_Rate_Estimation
-
