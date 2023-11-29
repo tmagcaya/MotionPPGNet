@@ -4,6 +4,15 @@ Summary: Fitness/health trackers use optical sensors called PPG sensors to measu
 
 - Dataset: Troika
 - Paper:  
+
+Todos:
+- [ ] Set up database utils code for managing the library
+- [ ] Set up model and optimizer code
+- [ ] Collect all tunable parameters in a top level code, gpu, etc
+- [ ] Requirements list or dockerization
+- [ ] Pytorch implementation
+- [ ] Readme file update
+
  
 References:
 - https://github.com/KJStrand/Pulse_Rate_Estimation
