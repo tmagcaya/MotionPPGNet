@@ -12,6 +12,7 @@ Todos:
 - [ ] Requirements list or dockerization
 - [ ] Pytorch implementation
 - [ ] Readme file update
+- [ ] Get feedback and enroll e few collaborators, post
 
  
 References:
