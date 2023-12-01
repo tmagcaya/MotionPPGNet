@@ -6,6 +6,7 @@ Summary: Fitness/health trackers use optical sensors called PPG sensors to measu
 - Paper:  
 
 Todos:
+- [x] Dataset manageement (added to repo for now, I know this isn't proper)
 - [ ] Set up database utils code for managing the library
 - [ ] Set up model and optimizer code
 - [ ] Collect all tunable parameters in a top level code, gpu, etc
