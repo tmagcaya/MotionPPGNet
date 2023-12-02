@@ -14,6 +14,7 @@ Todos:
 - [ ] Pytorch implementation
 - [ ] Readme file update
 - [ ] Get feedback and enroll e few collaborators, post
+- [ ] Pytorch conversion
 
  
 References:
