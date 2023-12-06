@@ -12,7 +12,7 @@ from scipy.signal import savgol_filter
 from scipy.signal import butter, lfilter
 
 
-def LoadTroikaDataset():
+def LoadTroikaDataset(data_dir):
     """
     Retrieve the .mat filenames for the troika dataset.
 
@@ -24,7 +24,6 @@ def LoadTroikaDataset():
         <data_fls> and <ref_fls> are ordered correspondingly, so that ref_fls[5] is the
             reference data for data_fls[5], etc...
     """
-    data_dir = proj_dir + "PPGdatasets/troika/training_data"
     data_fls = sorted(glob.glob(data_dir + "/DATA_*.mat"))
     ref_fls = sorted(glob.glob(data_dir + "/REF_*.mat"))
     return data_fls, ref_fls
