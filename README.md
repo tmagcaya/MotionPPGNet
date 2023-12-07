@@ -15,6 +15,7 @@ Todos:
 - [ ] Readme file update
 - [ ] Get feedback and enroll e few collaborators, post
 - [ ] Pytorch conversion
+- [ ] MLX conversion
 
  
 References:
