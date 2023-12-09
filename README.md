@@ -16,6 +16,7 @@ Todos:
 - [ ] Get feedback and enroll e few collaborators, post
 - [ ] Pytorch conversion
 - [ ] MLX conversion
+- [ ] inference speed analysis
 
  
 References:
