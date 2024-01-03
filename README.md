@@ -16,7 +16,7 @@ Todos:
 - [ ] Get feedback and enroll e few collaborators, post
 - [ ] Pytorch conversion
 - [ ] MLX conversion
-- [ ] inference speed analysis
+- [ ] Inference speed analysis and comparison when sped up with openvino and ONNX
 
  
 References:
