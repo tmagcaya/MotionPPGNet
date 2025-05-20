@@ -110,9 +110,10 @@ class TroikaDataset(Dataset):
                 self.acc_data.append(acc_window)
                 self.labels.append(ground_truth[i // window_shift])
 
-        # Convert to numpy arrays and reshape for PyTorch
-        self.ppg_data = np.array(self.ppg_data).astype('float32').reshape(-1, window_length, 1)
-        self.acc_data = np.array(self.acc_data).astype('float32').reshape(-1, window_length, 1)
+        # Convert to numpy arrays and reshape for PyTorch Conv1D
+        # Reshape to (samples, features, sequence_length) format for Conv1D
+        self.ppg_data = np.array(self.ppg_data).astype('float32')
+        self.acc_data = np.array(self.acc_data).astype('float32')
         self.labels = np.array(self.labels).astype('float32')
 
     def __len__(self):
@@ -123,9 +124,9 @@ class TroikaDataset(Dataset):
         acc = self.acc_data[idx]
         label = self.labels[idx]
 
-        # Permute the dimensions to match (batch, channels, sequence)
-        ppg = torch.tensor(ppg).permute(1, 0)
-        acc = torch.tensor(acc).permute(1, 0)
-        label = torch.tensor(label).unsqueeze(0)
+        ppg =torch.tensor(ppg).unsqueeze(0) # shape goes from [window_len] to [1,window_len]
+        acc = torch.tensor(acc).unsqueeze(0)
+        label = torch.tensor(label)
 
         return ppg, acc, label
+    
