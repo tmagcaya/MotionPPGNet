@@ -8,15 +8,17 @@ Summary: Fitness/health trackers use optical sensors called PPG sensors to measu
 Todos: 
 - [x] Dataset management (added to repo for now, I know this isn't proper)
 - [x] Set up database utils code for managing the library
-- [ ] Set up model and optimizer code
+- [x] Set up model and optimizer code
+- [x] Pytorch conversion -- experiences in a blog? (include mps?)
+- [ ] Fix the data leakage issue and compare to paper. 
 - [ ] Collect all tunable parameters in a top level config file, gpu, etc
 - [ ] Requirements list or dockerization
 - [ ] Pytorch implementation
 - [ ] Readme file update
 - [ ] Get feedback and enroll e few collaborators, post
-- [ ] Pytorch conversion
 - [ ] MLX conversion
 - [ ] Inference speed analysis and comparison when sped up with openvino and ONNX
+- [ ] TF to PT blog and MPS vs CPU
 
  
 References:
