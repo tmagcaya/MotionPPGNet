@@ -1,0 +1,3 @@
+[submodule "mvts_transformer"]
+	path = mvts_transformer
+	url = https://github.com/gzerveas/mvts_transformer.git
