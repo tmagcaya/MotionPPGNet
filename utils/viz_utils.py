@@ -1,8 +1,12 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
 def visualize_dataset_sample(dataset, sample_idx):
     # Retrieve a sample from the dataset
     ppg, acc, ground_truth = dataset[sample_idx]
+    ppg = np.array(ppg.squeeze())
+    acc = np.array(acc.squeeze())
+    ground_truth = np.array(ground_truth.squeeze())
     label = f"Sample idx = {sample_idx}, BPM = {ground_truth}"
     # Plotting  
     plt.figure(figsize=(8, 4))
